@@ -14,7 +14,7 @@ headers.forEach((header, i) => {
       const cellA = a.querySelectorAll('td')[i].textContent;
       const cellB = b.querySelectorAll('td')[i].textContent;
 
-      if (numberFormat(cellA) - numberFormat(cellB)) {
+      if (Number(numberFormat(cellA))) {
         return numberFormat(cellA) - numberFormat(cellB);
       }
 
